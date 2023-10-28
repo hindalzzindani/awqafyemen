@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <!-- Site Title-->
+    <title> الهيئة العامة للأوقاف</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      .rd-navbar-panel{
+        direction: ltr;
+      }
+      .rd-navbar-fixed .rd-navbar-content__toggle {
+        top: 4px;
+        right: 2px;
+        width: 48px;
+        display: inline-block;
+        position: relative;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        cursor: pointer;
+        color: #363636;
+        position: fixed;
+        z-index: 1000;
+    }
+
+      p,a,dl,dt,h4,dd,ul{
+        text-align: right;
+      }
+      .shell{
+        text-align: center;
+      }
+      @font-face {
+        font-family: 'Droid Arabic Kufi';
+        font-style: normal;
+        font-weight: 400;
+        src: url(fonts/DroidKufi-Regular.eot);
+        src: url(fonts/DroidKufi-Regular.eot?#iefix) format('embedded-opentype'), url(fonts/DroidKufi-Regular.woff2) format('woff2'), url(fonts/DroidKufi-Regular.woff) format('woff'), url(fonts/DroidKufi-Regular.ttf) format('truetype');
+    }
+
+      @font-face {
+        font-family: 'Droid Arabic Kufi';
+        font-style: normal;
+        font-weight: 700;
+        src: url(fonts/DroidKufi-Bold.eot);
+        src: url(fonts/DroidKufi-Bold.eot?#iefix) format('embedded-opentype'), url(fonts/DroidKufi-Bold.woff2) format('woff2'), url(fonts/DroidKufi-Bold.woff) format('woff'), url(fonts/DroidKufi-Bold.ttf) format('truetype');
+    }
+
+    textarea,
+p,
+table,
+th,
+td,
+h1,
+.mat-card-title,
+.mat-option-text,
+.mat-select-value,
+.mat-tab-label .mat-tab-label-content,
+button,
+.onsale,
+span,
+body,
+label,
+option,
+
+li,
+a,
+select,
+.mat-tooltip,
+.form-control div {
+    font-family: 'Droid Arabic Kufi', serif !important;
+}
+.rd-navbar .rd-navbar-nav > li > a {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.33333;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+      .rd-navbar-aside{
+        direction: rtl !important;
+      }
+      .rd-navbar-fullwidth .rd-navbar-items-list > li:first-child, .rd-navbar-static .rd-navbar-items-list > li:first-child {
+        padding-right: 0 !important;
+    }
+    .unit-spacing-sm.unit-horizontal > .unit__left + .unit__right, .unit-spacing-sm.unit-horizontal > .unit__left + .unit__body {
+      padding-top: 0;
+      padding-right: 15px;
+  }
+  @media (min-width: 1200px){
+.rd-navbar-static .rd-navbar-content > * + * {
+    margin-right: 20px;
+}}
+.rd-navbar-fullwidth .rd-navbar-items-list > li:not(:last-child), .rd-navbar-static .rd-navbar-items-list > li:not(:last-child) {
+  border-left: 1px solid #ebebeb;
+  border-right:0
+}
+.rd-navbar-nav{
+  flex-direction: inherit;
+}
+.rd-navbar-static .rd-navbar-nav > li + li {
+  margin-right: 20px;
+}
+.rd-navbar-fullwidth .rd-navbar-nav .rd-navbar--has-dropdown, .rd-navbar-static .rd-navbar-nav .rd-navbar--has-dropdown {
+  position: relative;
+  direction: rtl;
+}
+.rd-navbar-fixed .rd-navbar-content__toggle {
+  top: 4px;
+  
+  width: 48px;
+  display: inline-block;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  cursor: pointer;
+  color: #363636;
+  position: fixed;
+  z-index: 1000;
+}
+.rd-navbar-fullwidth .rd-navbar-nav > li > .rd-navbar-dropdown, .rd-navbar-static .rd-navbar-nav > li > .rd-navbar-dropdown {
+  position: absolute;
+  right: 0;
+  z-index: 5;
+  display: block;
+  text-align: left;
+}
+.rd-navbar-dropdown li{
+  text-align: right;
+  direction: rtl;
+}
+.rd-navbar-fullwidth .rd-navbar-dropdown > li > a:hover, .rd-navbar-fullwidth .rd-navbar-dropdown > li.focus > a, .rd-navbar-fullwidth .rd-megamenu-list > li > a:hover, .rd-navbar-fullwidth .rd-megamenu-list > li.focus > a, .rd-navbar-static .rd-navbar-dropdown > li > a:hover, .rd-navbar-static .rd-navbar-dropdown > li.focus > a, .rd-navbar-static .rd-megamenu-list > li > a:hover, .rd-navbar-static .rd-megamenu-list > li.focus > a, .rd-navbar-sidebar .rd-navbar-dropdown > li > a:hover, .rd-navbar-sidebar .rd-navbar-dropdown > li.focus > a, .rd-navbar-sidebar .rd-megamenu-list > li > a:hover, .rd-navbar-sidebar .rd-megamenu-list > li.focus > a {
+  padding-right: 14px;
+  padding-left: 0;
+}
+.rd-megamenu-header,.rd-megamenu-list li {
+  text-align: right;
+  direction: rtl;
+}
+.block-wrap-1{
+  direction: rtl;
+  text-align: right;
+}
+.object-decorated, .object-decorated_inline{
+  max-width: 100% !important;
+  margin-right: 4px !important;
+}
+.unit-spacing-xs.unit-horizontal > .unit__left + .unit__right, .unit-spacing-xs.unit-horizontal > .unit__left + .unit__body {
+  padding-top: 0;
+  padding-right: 20px;
+}
+.post-minimal {
+  text-align: right;
+}
+.rd-navbar-brand img{
+  width: 58%;
+  margin: -23px;
+}
+    </style>
+  </head>
+  <body>
+    <!-- Page Loader-->
+    <div id="page-loader">
+      <div class="page-loader-logo">
+        <div class="brand">
+          <div class="brand__name"><img src="images/logo.png" alt="" width="123" height="47"/>
+          </div>
+        </div>
+      </div>
+      <div class="page-loader-body">
+        <div id="loadingProgressG">
+          <div class="loadingProgressG" id="loadingProgressG_1"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Page-->
+    <div class="page">
+      <!-- Page Header -->
+      <header class="page-header section">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-stick-up-clone="false" data-md-stick-up-offset="113px" data-lg-stick-up-offset="138px" data-md-stick-up="true" data-lg-stick-up="true">
+            <div class="rd-navbar-aside-outer">
+              <div class="rd-navbar-aside">
+                <!-- RD Navbar Panel -->
+                <div class="rd-navbar-panel">
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a class="brand" href="index.html">
+                      <div class="brand__name"><img src="images/logo.png" alt="" width="123" height="47"/>
+                      </div></a></div>
+                </div>
+                <!-- RD Navbar Content-->
+                <div class="rd-navbar-content-outer">
+                  <div class="rd-navbar-content__toggle rd-navbar-static--hidden" data-rd-navbar-toggle=".rd-navbar-content"><span></span></div>
+                  <div class="rd-navbar-content">
+                    <ul class="rd-navbar-items-list"> 
+                      <li>
+                        <div class="unit unit-spacing-sm unit-horizontal unit-middle">
+                          <div class="unit__left"><span class="icon icon-md icon-primary fl-bigmug-line-trophy55"></span></div>
+                          <div class="unit__body">
+                            <p>تاريخ التأسيس <br> 0000 </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="unit unit-spacing-sm unit-horizontal unit-middle">
+                          <div class="unit__left"><span class="icon icon-md icon-primary fl-bigmug-line-circular220"></span></div>
+                          <div class="unit__body">
+                            <p>الشهادات <br>9001:2008</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="rd-navbar-content__item"><a class="button button-xs button-lighter" href="contacts.html">التوظيف</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Nav -->
+                <div class="rd-navbar-nav-wrap">
+                  <!-- RD Navbar Search-->
+                  <!-- <div class="rd-navbar-search rd-navbar-search-toggled">
+                    <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search"></button>
+                    <form class="rd-search" action="search-results.html" data-search-live="rd-search-results-live" method="GET">
+                      <div class="form-wrap">
+                        <input class="form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off">
+                        <label class="form-label" for="rd-navbar-search-form-input">Search...</label>
+                      </div>
+                      <button class="rd-navbar-search-submit" type="submit"></button>
+                      <div class="rd-search-results-live" id="rd-search-results-live"></div>
+                    </form>
+                  </div> -->
+                  <!-- RD Navbar Nav-->
+                  <ul class="rd-navbar-nav">
+                    <li class="active"><a href="index.html">الرئيسية</a>
+                    </li>
+                    <li><a href="about-us.html">عن الهيئة</a>
+                      <!-- RD Navbar Dropdown-->
+                      <ul class="rd-navbar-dropdown">
+                        <li><a href="top-management.html">التعريف بالهيئة</a>
+                        </li>
+                        <li><a href="testimonials.html">استراتيجية الهيئة</a>
+                        </li>
+                        <li><a href="testimonials.html">الهيكل التنظيمي</a>
+                        </li>
+                        <li><a href="testimonials.html">كلمة المسؤولين</a>
+                        </li>
+                        <li><a href="testimonials.html">نماذج وقفية</a>
+                        </li>
+                        
+                      </ul>
+                    </li>
+                    <li><a href="production.html">اللوائح والانظمة</a>
+                      <ul class="rd-navbar-dropdown">
+                        <li><a href="top-management.html">الانظمة والتشريعات</a>
+                        </li>
+                        <li><a href="testimonials.html">اللوائح التنظيمية والادلة</a>
+                        </li>                    
+                      </ul>
+                    </li>
+                    <li><a href="products.html">الخدمات</a>
+                      <!-- RD Navbar Dropdown-->
+                      <ul class="rd-navbar-dropdown">
+                        <li><a href="single-product.html">تسجيل وقف</a>
+                        </li>
+                        <li><a href="single-product.html">بلاغ عن وقف مجهول</a>
+                        </li>
+                        <li><a href="single-product.html">تقديم شكوي</a>
+                        </li>
+                        <li><a href="single-product.html">مراكز الخدمات</a>
+                        </li>
+                        <li><a href="single-product.html">مراكز الخدمات</a>
+                        </li>
+                        <li><a href="single-product.html">المقترحات</a>
+                        </li>
+                        <li><a href="single-product.html">رضا العملاء</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="news.html">المركز الاعلامي</a>
+                      <!-- RD Navbar Dropdown-->
+                      <ul class="rd-navbar-dropdown">
+                        <li><a href="single-post.html">اخبار الهيئة</a>
+                        </li>
+                        <li><a href="single-post.html">المكتبة المرئية</a>
+                        </li>
+                        <li><a href="single-post.html">المكتبة المقرؤة</a>
+                        </li>
+                        <li><a href="single-post.html">التقارير السنوية</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="news.html">الاستثمار</a>
+                    </li>
+                    <li><a href="contacts.html">اتصل بنا</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Swiper -->
+      <section class="section swiper-slider_style-1">
+        <div class="swiper-container swiper-slider swiper-slider_height-1" data-loop="true" data-autoplay="false" data-simulate-touch="false" data-additional-slides="0" data-custom-prev="#swiper-prev" data-custom-next="#swiper-next" data-custom-slide-effect="interLeaveEffect">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide context-light">
+              <div class="slide-inner" style="background-image: url(images/slider-1-slide-1-1920x749.jpg);">
+                <div class="swiper-slide-caption">
+                  <div class="shell">
+                    <!-- <h1  data-caption-animate="fadeInUpSmall">Big Ideas</h1>
+                    <h4 data-caption-animate="fadeInRightSmall" data-caption-delay="550">for Your Company</h4> -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide bg-gray-dark">
+              <div class="slide-inner" style="background-image: url(images/slider-1-slide-2-1920x749.jpg);">
+                <div class="swiper-slide-caption">
+                  <div class="shell">
+                    <h1 data-caption-animate="fadeInUpSmall">الهيئة العامة للأوقاف</h1>
+                    <!-- <div class="object-decorated"><span class="object-decorated__divider" data-caption-animate="fadeInRightSmall" data-caption-delay="300"></span>
+                      <h4 data-caption-animate="fadeInRightSmall" data-caption-delay="550">for Your Company</h4>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-navigation swiper-navigation_modern">
+          <div class="swiper-button-prev" id="swiper-prev"></div>
+          <div class="swiper-button-next" id="swiper-next"></div>
+        </div>
+      </section>
+
+      <!-- Production-->
+      <section class="section section-md bg-white">
+        <div class="shell shell-wide wow fadeInUpSmall" data-wow-offset="150">
+          <!-- Owl Carousel-->
+          <div class="owl-carousel owl-carousel_style-2" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="5" data-dots="true" data-nav="false" data-stage-padding="15" data-loop="true" data-margin="30" data-mouse-drag="false">
+          
+                <div class="item"><a class="thumb-corporate" href="production.html">
+                  <div class="thumb-corporate__inner"><img src="images/production-preview-1-370x303.jpg" alt="" width="370" height="303"/>
+                  </div>
+                  
+                  <p class="thumb-corporate__title">رضا العملاء </p></a></div>
+            <div class="item"><a class="thumb-corporate" href="production.html">
+                <div class="thumb-corporate__inner"><img src="images/production-preview-2-370x303.jpg" alt="" width="370" height="303"/>
+                </div>
+                <p class="thumb-corporate__title">  المقتراحات</p></a></div>
+            <div class="item"><a class="thumb-corporate" href="production.html">
+                <div class="thumb-corporate__inner"><img src="images/production-preview-3-370x303.jpg" alt="" width="370" height="303"/>
+                </div>
+                <p class="thumb-corporate__title">تقديم شكوي </p></a></div>
+            <div class="item"><a class="thumb-corporate" href="production.html">
+                <div class="thumb-corporate__inner"><img src="images/production-preview-4-370x303.jpg" alt="" width="370" height="303"/>
+                </div>
+                <p class="thumb-corporate__title">بلاغ عن وقف مجهول </p></a></div>
+                <div class="item"><a class="thumb-corporate" href="production.html">
+                  <div class="thumb-corporate__inner"><img src="images/production-preview-1-370x303.jpg" alt="" width="370" height="303"/>
+                  </div>
+                  
+                  <p class="thumb-corporate__title">تسجيل وقف </p></a></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience since 1999-->
+      <section class="section section-md bg-gray-4">
+        <div class="shell">
+          <div class="range range-50 range-sm-center range-md-reverse range-md-justify range-md-middle">
+            <div class="cell-sm-10 cell-md-6 cell-lg-5 wow fadeInRight">
+              <div class="block-wrap-1">
+                <h2><span>الاحصائيات</span><span class="object-decorated object-decorated_inline" style="max-width: 125px;"><span class="object-decorated__divider"></span><span class="heading-5">  </span></span></h2>
+                <p>الهيئة العامة للأوقاف عطاء مصان واحسان مستدام</p>
+                <div class="group-lg group-middle"><a class="button button-primary" href="contacts.html">المزيد </a>
+                  <div>
+                    <!-- <div class="unit unit-horizontal unit-middle unit-spacing-xs">
+                      <div class="unit__left" style="font-size: 0;"><a class="link link-video" href="//vimeo.com/160237084" data-lightbox="iframe"></a></div>
+                      <div class="unit__body">
+                        <h5>Video <br> Presentation</h5>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cell-sm-10 cell-md-6 wow fadeInLeft">
+              <div class="grid-layout-2x2">
+                <div class="grid-item">
+                  <!-- Box counter-->
+                  <article class="box-counter-modern">
+                    <div class="box-counter-modern__wrap">
+                      <div class="counter" data-zero="true">17</div>
+                    </div>
+                    <p class="box-counter-modern__title">الاهداف</p>
+                  </article>
+                </div>
+                <div class="grid-item">
+                  <!-- Box counter-->
+                  <article class="box-counter-modern">
+                    <div class="box-counter-modern__wrap">
+                      <div class="counter" data-zero="true">35</div>
+                    </div>
+                    <p class="box-counter-modern__title">ركائز </p>
+                  </article>
+                </div>
+                <div class="grid-item">
+                  <!-- Box counter-->
+                  <article class="box-counter-modern">
+                    <div class="box-counter-modern__wrap"><span class="big">3000</span></div>
+                    <p class="box-counter-modern__title">وقف </p>
+                  </article>
+                </div>
+                <div class="grid-item">
+                  <!-- Box counter-->
+                  <article class="box-counter-modern">
+                    <div class="box-counter-modern__wrap">
+                      <div class="counter" data-zero="true">264</div>
+                    </div>
+                    <p class="box-counter-modern__title">مبادرات </p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Projects-->
+      <section class="section section-md bg-white text-center">
+        <div class="shell-fullwidth">
+          <h2>المراكز الاعلامية </h2>
+          <!-- Owl Carousel-->
+          <div class="owl-carousel owl-carousel_style-2 wow fadeIn" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4" data-dots="true" data-nav="true" data-loop="true" data-stage-padding="0" data-sm-stage-padding="20" data-md-stage-padding="0" data-sm-margin="15" data-lg-margin="0" data-mouse-drag="false">
+            <div class="thumb-janez">
+              <figure class="thumb-janez__image-wrap"><img src="images/project-1-481x383.jpg" alt="" width="481" height="383"/>
+              </figure>
+              <div class="thumb-janez__content bg-gray-dark">
+                <div class="thumb-janez__content-inner">
+                  <h5><a href="#">الهيئة العامة للأوقاف</a></h5>
+                  <p>استكمال المرحلة الاوله من مشروع انماء للأعمار بيوت الله فى اب</p><a class="button button-xs button-darker" href="#">التفاصيل </a>
+                </div>
+              </div>
+            </div>
+            <div class="thumb-janez">
+              <figure class="thumb-janez__image-wrap"><img src="images/project-2-481x383.jpg" alt="" width="481" height="383"/>
+              </figure>
+              <div class="thumb-janez__content bg-gray-dark">
+                <div class="thumb-janez__content-inner">
+                  <h5><a href="#">الهيئة العامة للأوقاف</a></h5>
+                  <p>استكمال المرحلة الاوله من مشروع انماء للأعمار بيوت الله فى ذمار</p><a class="button button-xs button-darker" href="#">التفاصيل </a>
+                </div>
+              </div>
+            </div>
+            <div class="thumb-janez">
+              <figure class="thumb-janez__image-wrap"><img src="images/project-3-481x383.jpg" alt="" width="481" height="383"/>
+              </figure>
+              <div class="thumb-janez__content bg-gray-dark">
+                <div class="thumb-janez__content-inner">
+                  <h5><a href="#">الهيئة العامة للأوقاف</a></h5>
+                  <p>استكمال المرحلة الاوله من مشروع انماء للأعمار بيوت الله فى تعز</p><a class="button button-xs button-darker" href="#">التفاصيل </a>
+                </div>
+              </div>
+            </div>
+            <div class="thumb-janez">
+              <figure class="thumb-janez__image-wrap"><img src="images/project-4-480x383.jpg" alt="" width="480" height="383"/>
+              </figure>
+              <div class="thumb-janez__content bg-gray-dark">
+                <div class="thumb-janez__content-inner">
+                  <h5><a href="#">الهيئة العامة للأوقاف</a></h5>
+                  <p>استكمال المرحلة الاوله من مشروع انماء للأعمار بيوت الله فى الحديدة</p><a class="button button-xs button-darker" href="#">التفاصيل </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials-->
+      <section class="section section-md bg-white text-center">
+        <div class="shell">
+          <h2>كلمة المسؤولين</h2>
+          <div class="range range-50">
+            <div class="cell-sm-6 cell-md-4 wow fadeInUpSmall"> 
+                    <!-- Quote creative-->
+                    <article class="quote-creative">
+                      <div class="quote-creative__header">
+                        <div class="quote-creative__image-wrap"><img class="quote-creative__image" src="images/testimonials-1-88x88.jpg" alt="" width="88" height="88"/>
+                        </div>
+                      </div>
+                      <div class="quote-creative__main">
+                        <p class="q">الكلمة</p>
+                        <ul class="quote-creative__meta">
+                          <li><span class="cite">المسمي الوظيفي</span></li>
+                          <li><span class="small">الاسم</span></li>
+                        </ul>
+                      </div>
+                    </article>
+            </div>
+            <div class="cell-sm-6 cell-md-4 wow fadeInUpSmall" data-wow-delay=".2s">
+                    <!-- Quote creative-->
+                    <article class="quote-creative">
+                      <div class="quote-creative__header">
+                        <div class="quote-creative__image-wrap"><img class="quote-creative__image" src="images/testimonials-1-88x88.jpg" alt="" width="88" height="88"/>
+                        </div>
+                      </div>
+                      <div class="quote-creative__main">
+                        <p class="q">الكلمة</p>
+                        <ul class="quote-creative__meta">
+                          <li><span class="cite">المسمي الوظيفي</span></li>
+                          <li><span class="small">الاسم</span></li>
+                        </ul>
+                      </div>
+                    </article>
+            </div>
+            <div class="cell-sm-6 cell-md-4 wow fadeInUpSmall" data-wow-delay=".3s">
+                    <!-- Quote creative-->
+                    <article class="quote-creative">
+                      <div class="quote-creative__header">
+                        <div class="quote-creative__image-wrap"><img class="quote-creative__image" src="images/testimonials-1-88x88.jpg" alt="" width="88" height="88"/>
+                        </div>
+                      </div>
+                      <div class="quote-creative__main">
+                        <p class="q">الكلمة</p>
+                        <ul class="quote-creative__meta">
+                          <li><span class="cite">المسمي الوظيفي</span></li>
+                          <li><span class="small">الاسم</span></li>
+                        </ul>
+                      </div>
+                    </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Brands-->
+      <section class="section parallax-container bg-gray-dark">
+        <div class="material-parallax"><img src="images/parallax-1.jpg" alt=""/></div>
+        <div class="parallax-content">
+          <div class="section-sm owl-outer-navigation-wrap">
+            <div class="shell">
+              <!-- Owl Carousel-->
+              <div class="owl-carousel owl-carousel_style-1 text-center" data-items="1" data-xs-items="2" data-sm-items="3" data-md-items="4" data-dots="true" data-nav="true" data-stage-padding="15" data-loop="true" data-margin="30" data-mouse-drag="false" data-nav-custom="#owl-carousel-nav">
+                <div class="item"><a class="link-image" href="#"><img src="images/brand-1-156x45_inverse.png" alt="" width="156" height="45"/></a></div>
+                <div class="item"><a class="link-image" href="#"><img src="images/brand-2-126x69_inverse.png" alt="" width="126" height="69"/></a></div>
+                <div class="item"><a class="link-image" href="#"><img src="images/brand-3-150x36_inverse.png" alt="" width="150" height="36"/></a></div>
+                <div class="item"><a class="link-image" href="#"><img src="images/brand-4-130x45_inverse.png" alt="" width="130" height="45"/></a></div>
+              </div>
+            </div>
+            <div class="owl-outer-navigation" id="owl-carousel-nav"><a class="owl-arrow owl-arrow-prev fl-budicons-free-left161" href="#"></a><a class="owl-arrow owl-arrow-next fl-budicons-free-right163" href="#"></a></div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Latest News-->
+      <section class="section section-md bg-white">
+        <div class="shell">
+          <!-- Section Header-->
+          <div class="section__header">
+            <!-- <h4> اخر الاخبار </h4> -->
+            <div class="section__header-element"><a class="link link-md" href="news.html">عرض كل الاخبار</a></div>
+          </div>
+          <div class="range range-50">
+            <div class="cell-sm-6 cell-md-4 wow fadeInRightSmall">
+              <!-- Post minimal-->
+              <article class="post-minimal">
+                <time class="post-minimal__time" datetime="2017">يوليو 15, 2021</time>
+                <!-- <div class="post-minimal__divider"></div> -->
+                <h6 class="post-minimal__title"><a href="single-post.html">رئيس هيئة الأوقاف: مرحلة تحليل الوضع الراهن مهمة لعمل الهيئة وبنائها التنظيمي</a></h6>
+                <p>الأوقاف - صنعاء أكد رئيس الهيئة العامة للأوقاف العلامة عبدالمجيد الحوثي أن مرحلة تحليل الوضع الراهن والبيئتين الداخلية والخارجية، من أولويات عمل الهيئة خلال المرحلة الحالية في سياق خطة الهيئة الاستراتيجية الوطنية 2021م – 2025م. وقال…</p><a class="button button-xs button-lighter" href="single-post.html">التفاصيل</a>
+              </article>
+            </div>
+            <div class="cell-sm-6 cell-md-4 wow fadeInRightSmall" data-wow-delay=".1s">
+              <!-- Post minimal-->
+              <article class="post-minimal">
+                <time class="post-minimal__time" datetime="2017">يوليو 15, 2021</time>
+                <!-- <div class="post-minimal__divider"></div> -->
+                <h6 class="post-minimal__title"><a href="single-post.html">الأوقاف تستكمل المرحلة الأولى من ترميم جامع الإمام الهادي في صعدة</a></h6>
+                <p>الأوقاف - صعدة استكمل مكتب الهيئة العامة للأوقاف بمحافظة صعدة تنفيذ المرحلة الأولى من ترميم وإعادة تأهيل مسجد الإمام الهادي ضمن مشروع "إنما يعمر مساجد الله". وأوضح مدير عام مكتب الهيئة بالمحافظة لطف العواوي لوكالة الأنباء اليمنية…</p><a class="button button-xs button-lighter" href="single-post.html">التفاصيل </a>
+              </article>
+            </div>
+            <div class="cell-sm-6 cell-md-4 wow fadeInRightSmall" data-wow-delay=".2s">
+              <!-- Post minimal-->
+              <article class="post-minimal">
+                <time class="post-minimal__time" datetime="2017">يوليو 15, 2021 </time>
+                <!-- <div class="post-minimal__divider"></div> -->
+                <h6 class="post-minimal__title"><a href="single-post.html">ورشة عمل حول استكمال التحليل البيئي الاستراتيجي للهيئة العامة للأوقاف</a></h6>
+                <p>الأوقاف - صنعاء بدأت بصنعاء اليوم ورشة عمل حول استكمال التحليل البيئي الاستراتيجي للهيئة العامة للأوقاف، تنظمها الهيئة في سياق مشروع الإستراتيجية الوطنية للهيئة 2021- 2025م. تهدف الورشة على مدى يومين، بمشاركة الفريق الاستشاري لإعداد…</p><a class="button button-xs button-lighter" href="single-post.html">التفاصيل </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="section footer-modern parallax-container bg-gray-3">
+        <div class="material-parallax"><img src="images/bg-image-3.jpg" alt=""></div>
+        <div class="parallax-content">
+          <div class="footer-modern__inner">
+            <div class="shell">
+              <div class="range range-xs-center range-90">
+                <div class="cell-xs-10 cell-sm-6 cell-md-4">
+                  <!-- Box decorated-->
+                  <article class="box-decorated">
+                    <h4 class="box-decorated__title">تواصل معنا</h4>
+                    <dl class="list-terms-inline">
+                      <dt>الهاتف #1</dt>
+                      <dd><a href="callto:#">+1 (409) 987–5874  </a></dd>
+                    </dl>
+                    <dl class="list-terms-inline">
+                      <dt>الهاتف #2</dt>
+                      <dd><a href="callto:#">+1 (409) 123–3434</a></dd>
+                    </dl>
+                  </article>
+                </div>
+                <div class="cell-xs-10 cell-sm-6 cell-md-4">
+                  <!-- Box decorated-->
+                  <article class="box-decorated">
+                    <h4 class="box-decorated__title">ارسال رسالة</h4>
+                    <dl class="list-terms-inline">
+                      <!-- <dt>1 </dt> -->
+                      <dd><a href="mailto:#">info@demolink.org </a></dd>
+                    </dl>
+                    <dl class="list-terms-inline">
+                      <!-- <dt>2</dt> -->
+                      <dd><a href="mailto:#">infosupport@demolink.org</a></dd>
+                    </dl>
+                  </article>
+                </div>
+                <div class="cell-xs-10 cell-sm-6 cell-md-4">
+                  <!-- Box decorated-->
+                  <article class="box-decorated">
+                    <h4 class="box-decorated__title">الموقع</h4>
+                    <p>الجمهورية اليمنية</p>
+                    <ul class="list-inline-0">
+                      <li>
+                        <dl class="list-terms-inline">
+                          <dt>اوقات الدوام</dt>
+                          <dd>8:00–20:00</dd>
+                        </dl>
+                      </li>
+                      <li>
+                        <dl class="list-terms-inline"> 
+                          <dt>الجمعة</dt>
+                          <dd>مغلق</dd>
+                        </dl>
+                      </li>
+                    </ul>
+                  </article>
+                </div>
+             
+                <div class="cell-xs-10 cell-sm-6 cell-md-4">
+                
+                  <ul class="list-nav">
+                  
+                    <li><a href="about-us.html">عن الهيئة</a>
+                    </li>
+                    <li><a href="invest.html">الخدمات</a>
+                    </li>
+                    <li><a href="index.html">الرئيسية</a></li>
+                   
+                  </ul>
+                </div>
+            
+              </div>
+            </div>
+          
+            <div class="shell text-center">
+              <div class="range range-20">
+                <div class="cell-sm-6 text-sm-left">
+                
+                </div>
+                <div class="cell-sm-6 text-sm-right">
+                  <ul class="list-inline-xxs">
+                    <li>
+                      <p>روابط التواصل الاجتماعي </p>
+                    </li>
+                    <li><a class="icon icon-xs icon-style-modern fa fa-twitter" href="#"></a></li>
+                    <li><a class="icon icon-xs icon-style-modern fa fa-facebook" href="#"></a></li>
+                    <li><a class="icon icon-xs icon-style-modern fa fa-instagram" href="#"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
